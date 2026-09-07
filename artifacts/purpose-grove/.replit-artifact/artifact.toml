@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Purpose Grove Recovery Homes"
+description = "A warm, trustworthy recovery housing website for men seeking structured sober living, their families, and professional referral partners. Includes admissions, homes, program information, resources, FAQs, and inquiry forms."
+version = "1.0.0"
+id = "artifacts/purpose-grove"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21903
+
+[services.development]
+run = "pnpm --filter @workspace/purpose-grove run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/purpose-grove", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/purpose-grove/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21903"
+BASE_PATH = "/"

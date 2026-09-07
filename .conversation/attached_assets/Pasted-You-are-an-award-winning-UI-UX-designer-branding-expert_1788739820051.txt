@@ -1,0 +1,245 @@
+You are an award-winning UI/UX designer, branding expert, copywriter, and senior full-stack web developer.
+
+Build a modern, luxury, responsive website for my recovery housing company.
+
+Company Name:
+Purpose Grove Living
+
+Brand Name:
+Purpose Grove Recovery Homes
+
+Mission:
+Purpose Grove Recovery Homes provides safe, structured, supportive recovery housing for men committed to long-term sobriety. We help residents build stability, accountability, life skills, employment, and independence in a respectful community environment.
+
+Target Audience:
+• Individuals seeking sober living
+• Families looking for safe housing
+• Hospitals
+• Treatment Centers
+• Detox Facilities
+• Case Managers
+• Probation Officers
+• Social Workers
+• Behavioral Health Organizations
+
+Website Goals:
+1. Generate phone calls
+2. Generate admissions applications
+3. Generate referral partner inquiries
+4. Build trust
+5. Rank well on Google (SEO)
+6. Look more professional than competitors
+
+Style:
+Modern
+Luxury
+Minimal
+Peaceful
+Hopeful
+Professional
+Warm
+High-end
+
+Color Palette:
+Forest Green (#1F4D3A)
+Sage Green (#A8BFA5)
+White
+Warm Beige (#F6F2EA)
+Dark Gray (#333333)
+
+Typography:
+Modern sans-serif
+Large headlines
+Lots of white space
+
+Logo Concept:
+Minimal tree/grove icon
+Roots represent stability
+Branches represent growth
+Simple enough for embroidery, signs, and business cards
+
+Navigation:
+Home
+About
+Admissions
+Our Homes
+Recovery Program
+Referral Partners
+FAQ
+Resources
+Contact
+
+Homepage Sections:
+
+Hero Section
+Headline:
+"A Safe Place to Heal. A Life With Purpose."
+
+Subheadline:
+Purpose Grove Recovery Homes provides structured recovery housing where individuals rebuild their lives through accountability, community, and hope.
+
+Buttons:
+Apply Now
+Refer Someone
+Call Now
+
+About Section
+Explain:
+• Mission
+• Values
+• Safe housing
+• Recovery community
+• Accountability
+• Respect
+• Personal growth
+
+Why Choose Us
+Use professional icon cards.
+
+Examples:
+Structured Environment
+Peer Support
+Drug-Free Living
+Employment Assistance
+Life Skills
+Community
+Recovery Resources
+Safe Housing
+
+Our Homes
+Beautiful property cards.
+
+Each property includes:
+Photos
+Location
+Bedrooms
+Bathrooms
+Amenities
+Availability
+Apply Button
+
+Amenities Section
+WiFi
+Laundry
+Fully Furnished
+Transportation Assistance
+Weekly Meetings
+House Manager
+Accountability
+Utilities Included
+Kitchen
+Outdoor Space
+
+Recovery Program
+Describe:
+House meetings
+Random drug testing (if applicable)
+Curfew
+Employment expectations
+Peer accountability
+Recovery meetings
+Life skills
+
+Referral Partners
+Dedicated section for:
+Hospitals
+Treatment Centers
+Case Managers
+Probation Officers
+Social Workers
+
+CTA:
+Partner With Us
+
+Admissions Process
+Step 1
+Call
+
+Step 2
+Interview
+
+Step 3
+Move In
+
+Testimonials
+Create realistic placeholder testimonials.
+
+FAQ
+20 frequently asked questions.
+
+Blog
+SEO-ready blog.
+
+Example articles:
+Benefits of Sober Living
+How Recovery Housing Works
+Transitioning After Rehab
+Finding Support After Treatment
+Building Healthy Habits
+
+Contact Page
+Large contact form
+Google Map placeholder
+Business hours
+Phone
+Email
+Emergency contact
+
+Footer
+Privacy Policy
+Terms
+Fair Housing statement
+Social media links
+
+SEO
+Create:
+Title tags
+Meta descriptions
+Schema markup
+Open Graph tags
+Fast loading
+Accessibility
+Local SEO
+
+Performance
+95+ Lighthouse score
+
+Technical Requirements
+Next.js (latest)
+React
+Tailwind CSS
+TypeScript
+Framer Motion
+Responsive
+Dark mode support
+Modern animations
+SEO optimized
+
+Create reusable components.
+
+Include:
+Sticky navigation
+Animated hero
+Scroll animations
+Beautiful cards
+Professional icons
+Interactive FAQ
+Contact forms
+Admission application form
+Referral form
+
+Forms should include validation.
+
+Generate:
+• Complete website copy
+• Images to use (describe them)
+• Icons
+• Folder structure
+• Component structure
+• Deployment instructions
+• Branding guide
+• Style guide
+
+The design should feel comparable to premium healthcare and hospitality websites—not generic rehab websites.
+
+The finished site should be polished enough that I could deploy it immediately after replacing placeholder photos and contact information.
