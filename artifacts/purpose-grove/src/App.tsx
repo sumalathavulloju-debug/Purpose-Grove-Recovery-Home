@@ -71,7 +71,7 @@ function Logo() {
       </span>
       <span className="leading-none">
         <span className="block text-[11px] font-bold uppercase tracking-[.18em] text-[#1f4d3a]">Purpose Grove</span>
-        <span className="mt-1 block text-[10px] tracking-[.11em] text-[#6e876d]">Recovery Homes</span>
+        <span className="mt-1 block text-[10px] tracking-[.11em] text-[#6e876d]">Sober Living</span>
       </span>
     </a>
   );
@@ -127,10 +127,10 @@ function App() {
   const [contactSubmitted, setContactSubmitted] = useState(false);
 
   useEffect(() => {
-    document.title = 'Purpose Grove Recovery Homes | A Safe Place to Heal';
+    document.title = 'Purpose Grove Sober Living | North Texas';
     const description = document.querySelector('meta[name="description"]') ?? document.createElement('meta');
     description.setAttribute('name', 'description');
-    description.setAttribute('content', 'Purpose Grove offers steady, structured recovery homes for men committed to long-term sobriety.');
+    description.setAttribute('content', 'Purpose Grove offers steady, structured sober living in North Texas for men committed to long-term sobriety.');
     document.head.appendChild(description);
 
     const observer = new IntersectionObserver((entries) => {
@@ -160,11 +160,12 @@ function App() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Residence',
-    name: 'Purpose Grove Recovery Homes',
-    description: 'Structured recovery homes for men committed to long-term sobriety.',
-    telephone: '+1-615-555-0148',
+    name: 'Purpose Grove Sober Living',
+    description: 'Structured sober living in North Texas for men committed to long-term sobriety.',
+    telephone: '+1-214-555-0148',
     email: 'hello@purposegrove.com',
-    address: { '@type': 'PostalAddress', addressLocality: 'Nashville', addressRegion: 'TN', addressCountry: 'US' },
+    areaServed: 'North Texas',
+    address: { '@type': 'PostalAddress', addressLocality: 'North Texas', addressRegion: 'TX', addressCountry: 'US' },
   };
 
   return (
@@ -179,7 +180,7 @@ function App() {
             ))}
           </nav>
           <div className="hidden items-center gap-4 lg:flex">
-            <a href="tel:+16155550148" className="focus-ring flex items-center gap-2 text-[12px] font-semibold text-[#476452]" data-testid="link-phone"><Phone size={14} /> (615) 555-0148</a>
+            <a href="tel:+12145550148" className="focus-ring flex items-center gap-2 text-[12px] font-semibold text-[#476452]" data-testid="link-phone"><Phone size={14} /> (214) 555-0148</a>
             <ButtonLink href="#contact" dark>Start a conversation</ButtonLink>
           </div>
           <button type="button" onClick={() => setMenuOpen(!menuOpen)} className="focus-ring rounded-full p-2 lg:hidden" aria-label={menuOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={menuOpen} data-testid="button-mobile-menu">
@@ -203,7 +204,7 @@ function App() {
           <div className="absolute right-[10%] top-[23%] h-36 w-36 rounded-full border border-[#dbe6d6]/30 hero-orb" />
           <div className="relative mx-auto w-full max-w-[1240px] px-5 pb-16 lg:px-8 lg:pb-24">
             <div className="max-w-[690px] reveal visible">
-              <p className="eyebrow !text-[#c7d8c1]">Purpose Grove Living</p>
+               <p className="eyebrow !text-[#c7d8c1]">Purpose Grove Sober Living</p>
               <h1 className="mt-5 text-balance font-display text-[clamp(3.4rem,8vw,7rem)] leading-[.97] tracking-[-.045em] text-[#f8f6ef]">A safe place<br /><em className="text-[#bfd0b8]">to heal.</em></h1>
               <p className="mt-7 max-w-[500px] text-[17px] leading-7 text-[#e1e9dd]">A life with purpose starts with a place that makes room for it. Thoughtful homes and steady accountability for men choosing long-term sobriety.</p>
               <div className="mt-9 flex flex-wrap items-center gap-4">
@@ -214,7 +215,7 @@ function App() {
             <div className="mt-16 flex flex-wrap gap-x-10 gap-y-4 border-t border-[#cbdcca]/30 pt-5 text-[11px] font-bold uppercase tracking-[.16em] text-[#d6e4d0] reveal delay-2">
               <span className="flex items-center gap-2"><ShieldCheck size={15} /> Substance-free homes</span>
               <span className="flex items-center gap-2"><Users size={15} /> Individualized support</span>
-              <span className="flex items-center gap-2"><MapPin size={15} /> Greater Nashville</span>
+               <span className="flex items-center gap-2"><MapPin size={15} /> North Texas</span>
             </div>
           </div>
         </section>
@@ -247,7 +248,7 @@ function App() {
                 <img src="/hero-grove.jpg" alt="Purpose Grove house surrounded by pines and a quiet gravel path" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#112d22]/85 via-transparent to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-7 text-[#f8f6ef] lg:p-9">
-                  <div className="flex items-end justify-between gap-5"><div><p className="text-[11px] font-bold uppercase tracking-[.18em] text-[#c7d8c1]">Nashville · Green Hills</p><h3 className="mt-2 font-display text-4xl">The Grove House</h3></div><span className="mb-1 rounded-full border border-[#dbe6d6]/50 px-3 py-1 text-[11px]">8 residents</span></div>
+                   <div className="flex items-end justify-between gap-5"><div><p className="text-[11px] font-bold uppercase tracking-[.18em] text-[#c7d8c1]">North Texas</p><h3 className="mt-2 font-display text-4xl">The Grove House</h3></div><span className="mb-1 rounded-full border border-[#dbe6d6]/50 px-3 py-1 text-[11px]">8 residents</span></div>
                   <p className="mt-4 max-w-[420px] text-sm leading-6 text-[#e1e9dd]">A light-filled home with a shared kitchen, quiet reading room, and a back garden made for slow evenings.</p>
                 </div>
               </article>
@@ -287,10 +288,10 @@ function App() {
 
         <section id="admissions" className="bg-[#1f4d3a] px-5 py-24 text-[#f6f2ea] lg:px-8 lg:py-32">
           <div className="mx-auto grid max-w-[1240px] gap-14 lg:grid-cols-[.8fr_1.2fr] lg:items-start">
-            <div className="reveal lg:sticky lg:top-28"><p className="eyebrow !text-[#b9ceb3]">Admissions</p><h2 className="mt-5 font-display text-[clamp(2.8rem,5vw,5rem)] leading-[.97] tracking-[-.04em]">Start with a<br /><em>conversation.</em></h2><p className="mt-7 max-w-[380px] text-[15px] leading-6 text-[#d2dfcc]">You do not have to have every answer before you reach out. Tell us a little about where you are, and we will help you understand the next step.</p><div className="mt-9 flex flex-col gap-3 text-sm text-[#d2dfcc]"><a href="tel:+16155550148" className="focus-ring flex w-fit items-center gap-3 hover:text-white" data-testid="link-admissions-phone"><Phone size={16} /> (615) 555-0148</a><a href="mailto:admissions@purposegrove.com" className="focus-ring flex w-fit items-center gap-3 hover:text-white" data-testid="link-admissions-email"><Mail size={16} /> admissions@purposegrove.com</a></div></div>
+             <div className="reveal lg:sticky lg:top-28"><p className="eyebrow !text-[#b9ceb3]">Admissions</p><h2 className="mt-5 font-display text-[clamp(2.8rem,5vw,5rem)] leading-[.97] tracking-[-.04em]">Start with a<br /><em>conversation.</em></h2><p className="mt-7 max-w-[380px] text-[15px] leading-6 text-[#d2dfcc]">You do not have to have every answer before you reach out. Tell us a little about where you are, and we will help you understand the next step.</p><div className="mt-9 flex flex-col gap-3 text-sm text-[#d2dfcc]"><a href="tel:+12145550148" className="focus-ring flex w-fit items-center gap-3 hover:text-white" data-testid="link-admissions-phone"><Phone size={16} /> (214) 555-0148</a><a href="mailto:admissions@purposegrove.com" className="focus-ring flex w-fit items-center gap-3 hover:text-white" data-testid="link-admissions-email"><Mail size={16} /> admissions@purposegrove.com</a></div></div>
             <form className="rounded-[2rem] bg-[#f6f2ea] p-6 text-[#1f4d3a] sm:p-9 reveal delay-1" onSubmit={(event) => submitForm(event, setAdmissionSubmitted)} noValidate={false}>
               <div className="mb-8 flex items-start justify-between gap-4"><div><p className="text-[11px] font-bold uppercase tracking-[.18em] text-[#6e876d]">Private inquiry</p><h3 className="mt-2 font-display text-3xl">Find the right fit.</h3></div><HeartHandshake className="text-[#c18f5f]" size={28} strokeWidth={1.4} /></div>
-              <div className="grid gap-5 sm:grid-cols-2"><Field label="Your name" name="name" placeholder="Full name" /><Field label="Email address" name="email" type="email" placeholder="you@example.com" /><Field label="Phone number" name="phone" type="tel" placeholder="(615) 000-0000" /><Field label="Who are you reaching out for?" name="relationship" placeholder="Myself, son, client..." /></div>
+               <div className="grid gap-5 sm:grid-cols-2"><Field label="Your name" name="name" placeholder="Full name" /><Field label="Email address" name="email" type="email" placeholder="you@example.com" /><Field label="Phone number" name="phone" type="tel" placeholder="(214) 000-0000" /><Field label="Who are you reaching out for?" name="relationship" placeholder="Myself, son, client..." /></div>
               <label className="mt-5 block"><span className="mb-2 block text-[12px] font-bold tracking-[.04em] text-[#345641]">A little about your situation <span aria-hidden="true">*</span></span><textarea required name="message" rows={4} placeholder="Share only what feels comfortable..." className="focus-ring w-full resize-none rounded-xl border border-[#d8dfd3] bg-[#fbfaf6] px-4 py-3 text-[14px] text-[#1f4d3a] placeholder:text-[#92a194] focus:border-[#1f4d3a]" data-testid="input-admission-message" /></label>
               <button type="submit" className="focus-ring mt-6 inline-flex items-center gap-3 rounded-full bg-[#1f4d3a] px-6 py-3 text-[13px] font-bold text-[#f6f2ea] transition-transform hover:-translate-y-0.5" data-testid="button-submit-admission">Send inquiry <ArrowRight size={15} /></button>
               <FormNotice submitted={admissionSubmitted} />
@@ -323,14 +324,14 @@ function App() {
 
         <section id="contact" className="bg-[#f0e9dc] px-5 py-24 lg:px-8 lg:py-32">
           <div className="mx-auto grid max-w-[1240px] gap-12 lg:grid-cols-[.9fr_1.1fr]">
-            <div className="reveal"><p className="eyebrow">Contact</p><h2 className="mt-5 font-display text-[clamp(3rem,6vw,5.8rem)] leading-[.94] tracking-[-.05em]">There is room<br />for a <em>next step.</em></h2><p className="mt-7 max-w-[390px] text-[16px] leading-7 text-[#476452]">Whether you are ready to move in or simply trying to understand your options, we are here for the first conversation.</p><div className="mt-10 space-y-4 text-sm"><a href="tel:+16155550148" className="focus-ring flex w-fit items-center gap-3 font-bold hover:text-[#c18f5f]" data-testid="link-contact-phone"><Phone size={17} /> (615) 555-0148</a><a href="mailto:hello@purposegrove.com" className="focus-ring flex w-fit items-center gap-3 font-bold hover:text-[#c18f5f]" data-testid="link-contact-email"><Mail size={17} /> hello@purposegrove.com</a><span className="flex items-center gap-3 text-[#617766]"><MapPin size={17} /> Greater Nashville, Tennessee</span></div></div>
+             <div className="reveal"><p className="eyebrow">Contact</p><h2 className="mt-5 font-display text-[clamp(3rem,6vw,5.8rem)] leading-[.94] tracking-[-.05em]">There is room<br />for a <em>next step.</em></h2><p className="mt-7 max-w-[390px] text-[16px] leading-7 text-[#476452]">Whether you are ready to move in or simply trying to understand your options, we are here for the first conversation.</p><div className="mt-10 space-y-4 text-sm"><a href="tel:+12145550148" className="focus-ring flex w-fit items-center gap-3 font-bold hover:text-[#c18f5f]" data-testid="link-contact-phone"><Phone size={17} /> (214) 555-0148</a><a href="mailto:hello@purposegrove.com" className="focus-ring flex w-fit items-center gap-3 font-bold hover:text-[#c18f5f]" data-testid="link-contact-email"><Mail size={17} /> hello@purposegrove.com</a><span className="flex items-center gap-3 text-[#617766]"><MapPin size={17} /> North Texas</span></div></div>
             <form className="rounded-[2rem] bg-[#f6f2ea] p-6 sm:p-9 reveal delay-1" onSubmit={(event) => submitForm(event, setContactSubmitted)}><div className="grid gap-5 sm:grid-cols-2"><Field label="Name" name="contact-name" placeholder="Full name" /><Field label="Email" name="contact-email" type="email" placeholder="you@example.com" /></div><label className="mt-5 block"><span className="mb-2 block text-[12px] font-bold tracking-[.04em] text-[#345641]">What would you like to talk about? <span aria-hidden="true">*</span></span><select required name="topic" defaultValue="" className="focus-ring w-full appearance-none rounded-xl border border-[#d8dfd3] bg-[#fbfaf6] px-4 py-3 text-sm text-[#1f4d3a]" data-testid="select-contact-topic"><option value="" disabled>Select a topic</option><option>Admissions and availability</option><option>Professional referral</option><option>Family questions</option><option>Something else</option></select></label><label className="mt-5 block"><span className="mb-2 block text-[12px] font-bold tracking-[.04em] text-[#345641]">Your message <span aria-hidden="true">*</span></span><textarea required name="contact-message" rows={5} placeholder="How can we be helpful?" className="focus-ring w-full resize-none rounded-xl border border-[#d8dfd3] bg-[#fbfaf6] px-4 py-3 text-sm text-[#1f4d3a] placeholder:text-[#92a194]" data-testid="input-contact-message" /></label><button type="submit" className="focus-ring mt-6 inline-flex items-center gap-3 rounded-full bg-[#1f4d3a] px-6 py-3 text-[13px] font-bold text-[#f6f2ea] transition-transform hover:-translate-y-0.5" data-testid="button-submit-contact">Send message <ArrowRight size={15} /></button><FormNotice submitted={contactSubmitted} /></form>
           </div>
         </section>
       </main>
 
       <footer className="bg-[#1f4d3a] px-5 py-10 text-[#d2dfcc] lg:px-8">
-        <div className="mx-auto flex max-w-[1240px] flex-col justify-between gap-8 md:flex-row md:items-end"><div><div className="flex items-center gap-3 text-[#f6f2ea]"><Leaf size={19} /><span className="text-[11px] font-bold uppercase tracking-[.18em]">Purpose Grove Living</span></div><p className="mt-4 max-w-[270px] text-sm leading-6 text-[#a9c0a4]">A safe place to heal. A life with purpose.</p></div><div className="flex flex-wrap gap-x-6 gap-y-3 text-xs font-semibold"><a href="#about" className="focus-ring hover:text-white" data-testid="link-footer-about">About</a><a href="#admissions" className="focus-ring hover:text-white" data-testid="link-footer-admissions">Admissions</a><a href="#faq" className="focus-ring hover:text-white" data-testid="link-footer-faq">FAQ</a><a href="#contact" className="focus-ring hover:text-white" data-testid="link-footer-contact">Contact</a></div><p className="text-[11px] text-[#8fab89]">© 2024 Purpose Grove Recovery Homes</p></div>
+         <div className="mx-auto flex max-w-[1240px] flex-col justify-between gap-8 md:flex-row md:items-end"><div><div className="flex items-center gap-3 text-[#f6f2ea]"><Leaf size={19} /><span className="text-[11px] font-bold uppercase tracking-[.18em]">Purpose Grove Sober Living</span></div><p className="mt-4 max-w-[270px] text-sm leading-6 text-[#a9c0a4]">A safe place to heal. A life with purpose.</p></div><div className="flex flex-wrap gap-x-6 gap-y-3 text-xs font-semibold"><a href="#about" className="focus-ring hover:text-white" data-testid="link-footer-about">About</a><a href="#admissions" className="focus-ring hover:text-white" data-testid="link-footer-admissions">Admissions</a><a href="#faq" className="focus-ring hover:text-white" data-testid="link-footer-faq">FAQ</a><a href="#contact" className="focus-ring hover:text-white" data-testid="link-footer-contact">Contact</a></div><p className="text-[11px] text-[#8fab89]">© 2026 Purpose Grove Sober Living</p></div>
       </footer>
     </div>
   );
