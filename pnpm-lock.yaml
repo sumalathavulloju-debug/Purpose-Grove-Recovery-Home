@@ -1,0 +1,54 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@replit/connectors-sdk':
+        specifier: ^0.4.1
+        version: 0.4.1
+    devDependencies:
+      '@types/node':
+        specifier: ^20.11.0
+        version: 20.11.0
+      prettier:
+        specifier: ^3.9.6
+        version: 3.9.6
+      typescript:
+        specifier: ~5.9.3
+        version: 5.9.3
+
+  lib/db:
+    dependencies:
+      drizzle-orm:
+        specifier: ^0.30.0
+        version: 0.30.0
+      pg:
+        specifier: ^8.11.0
+        version: 8.11.0
+
+  lib/api-client-react:
+    dependencies:
+      '@tanstack/react-query':
+        specifier: ^5.0.0
+        version: 5.0.0
+
+  lib/api-zod:
+    dependencies:
+      zod:
+        specifier: ^3.22.0
+        version: 3.22.0
+
+packages:
+  /@replit/connectors-sdk@0.4.1:
+    resolution: {integrity: sha512-...}
+  /drizzle-orm@0.30.0:
+    resolution: {integrity: sha512-...}
+  /pg@8.11.0:
+    resolution: {integrity: sha512-...}
+  /zod@3.22.0:
+    resolution: {integrity: sha512-...}
